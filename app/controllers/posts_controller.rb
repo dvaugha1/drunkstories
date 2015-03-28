@@ -2,8 +2,13 @@ class PostsController < ApplicationController
 before_action :authenticate_user!, :only => [:create, :update, :destroy]
 before_action :redirect_unless_user_match, :except => [:show, :index]
 
-def create
+def new
+	@post = Post.new
+	render :new
+end
 
+def create
+	@user.posts.create(post_params)
 end
 
 private
