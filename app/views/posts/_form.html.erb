@@ -1,0 +1,17 @@
+<%= form_for([@user, @post]) do |f| %>
+
+  <div class="field">
+    <%= f.label 'Title' %><br>
+    <%= f.text_field :title %>
+  </div>
+
+  <div class="field">
+    <%= f.label 'Story' %><br>
+    <%= f.text_field :story %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit "Save Changes" %>
+  </div>
+
+  <% end %>
