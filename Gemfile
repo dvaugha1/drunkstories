@@ -40,6 +40,9 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 # gem 'capistrano-rails', group: :development
 
 group :development, :test do
+
+  # Rails ERD because I want to try it
+  gem "rails-erd"
   # Pry, because you always need pry
   gem 'pry'
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
